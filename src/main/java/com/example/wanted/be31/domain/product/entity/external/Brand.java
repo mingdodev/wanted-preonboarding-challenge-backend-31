@@ -1,4 +1,4 @@
-package com.example.wanted.be31.domain.product.entity;
+package com.example.wanted.be31.domain.product.entity.external;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -1,5 +1,7 @@
 package com.example.wanted.be31.domain.product.entity;
 
+import com.example.wanted.be31.domain.product.entity.external.Brand;
+import com.example.wanted.be31.domain.product.entity.external.Seller;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
