@@ -12,10 +12,14 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import java.time.LocalDateTime;
+import lombok.Builder;
+import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
 @Entity
+@Getter
+@Builder
 @Table(name = "products")
 public class Product {
 
@@ -53,5 +57,11 @@ public class Product {
 
     @Column(nullable = false)
     private String status;
+
+    public static Product create(Long id, String name, String slug, ) {
+        return Product.builder()
+                .id(id)
+                .build();
+    }
 
 }
